@@ -38,9 +38,8 @@ const database = {
 app.use(express.json());
 app.use(cors());
 
-app.get('/', (req, res) => {
-  console.log(res.json());
-  return res.send(database.users);
+app.get('/', (req, res) => {  
+  res.send(database.users);
 });
 
 app.post('/signin', (req, res) => {

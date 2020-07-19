@@ -18,7 +18,7 @@ const db = knex({
 });
 
 //  EXPRESS SET UP
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3001;
 
 const app = express();
 app.use(express.json());
